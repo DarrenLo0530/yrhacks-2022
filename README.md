@@ -5,5 +5,7 @@ A tool used to monitor class engagement by tracking student's eyes to find out h
 - GUI built with eel
 
 # To Run
+```
 pip install -r requirements.txt
 python ./app.py
+```
