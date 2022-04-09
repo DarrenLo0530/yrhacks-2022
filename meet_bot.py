@@ -36,7 +36,6 @@ def analyze_attention(driver):
     img = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
     grayscale = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     faces = face_cascade.detectMultiScale(grayscale, 1.1, 4)
-      
     for x, y, w, h in faces:
       # Crop faces from image, run eye gaze algorithm
       face = img[y:y+h, x:x+w]
@@ -78,12 +77,6 @@ def monitor_meet(meet_code):
 
   # Request to join the meet
   request_join(driver)
-
-  # Wait to be let in
-  WebDriverWait(driver, 10).until(
-    EC.presence_of_element_located((By.ID, 'tt-c6'))
-  )
-
   analyze_attention(driver)
   driver.quit()
 
