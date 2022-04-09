@@ -92,9 +92,6 @@ class GazeTracking(object):
         the center is 0.5 and the extreme bottom is 1.0
         """
         if self.pupils_located:
-            print(self.eye_left.pupil.y)
-            print(self.eye_left.center[1])
-            print()
             pupil_left = self.eye_left.pupil.y / (self.eye_left.center[1] * 2 - 1)
             pupil_right = self.eye_right.pupil.y / (self.eye_right.center[1] * 2 - 1)
             return (pupil_left + pupil_right) / 2
