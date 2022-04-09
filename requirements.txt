@@ -1,5 +1,5 @@
-cv2
+opencv-python
 dlib
 numpy
-PyQt5
+eel
 selenium
