@@ -2,3 +2,4 @@ cv2
 dlib
 numpy
 PyQt5
+selenium
