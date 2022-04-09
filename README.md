@@ -3,3 +3,5 @@ A tool used to monitor class engagement by tracking student's eyes to find out h
 
 - Uses gaze tracking library from [GazeTracking](https://github.com/antoinelame/GazeTracking)
 - GUI built with eel
+
+# To Run
